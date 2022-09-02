@@ -1,0 +1,24 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/pexels-marta-dzedyshko-2067436.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+.jumbotron-detail-apple-pie{
+    background: url('../images/pexels-marta-dzedyshko-2067436.jpg') no-repeat fixed;
+}
+
+.jumbotron{
+    height: 40vh;
+    background-size: cover;
+}
+
+.g-signin2{
+    width: 100%;
+  }
+  
+  .g-signin2 > div{
+    margin: 0 auto;
+  }

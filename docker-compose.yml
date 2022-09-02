@@ -1,0 +1,20 @@
+version: '3'
+services:
+  cliente-mtp:
+    build:
+      context: ./my-titis-pies-client
+    container_name: cliente-mtp-v1
+    ports:
+      - "8085:80"
+    tty: true
+  backend-mtp:
+    build:
+      context: ./my-titis-pies-backend
+    environment:
+      - PATH_PRINCIPAL=${PATH_PRINCIPAL}
+      - MAIL_EMPRESA=${MAIL_EMPRESA}
+      - CONTRASENA_MAIL_EMPRESA=${CONTRASENA_MAIL_EMPRESA}
+    container_name: backend-mtp-v1
+    ports:
+      - "8080:8080"
+    tty: true

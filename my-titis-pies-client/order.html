@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="google-signin-client_id"
+        content="277650902254-8rdmto60nhcj0ib9dh6ov5mrcn28ef5r.apps.googleusercontent.com">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>My Titi's Pie Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-cheese"></i>
+                    My Titi's Pie Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="nav-link" href="order.html">Ordenar!</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        </div>
+    </header>
+
+    <div class="container border border-white py-5 mt-5 bg-gradient">
+
+        <div class="row col-md-8 offset-2">
+            <div class="form-group mb-3">
+                <p class="text-center display-3 text-white"><small>Hacé tu pedido y en breve nos contactamos con
+                        vos.</small></p>
+            </div>
+            <div class="container border border-white mb-5">
+                <div class="form-group row">
+                    <p class="text-center display-6 col-md-12 text-white text-center py-3"><small>Inicia sesión con
+                            google o rellena el formulario.</small></p>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-md-12 py-3 text-white text-center">
+                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="" id='form'>
+            <div class="row col-md-8 offset-2">
+                <div class="container" id="antesDe">
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-3">
+                            <label for="inputNombre" class="text-white">Nombre</label>
+                            <input type="text" name="inputNombre" class="form-control" id="inputNombre" />
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                            <label for="inputNombre" class="text-white">Apellido</label>
+                            <input type="text" name="inputApellido" class="form-control" id="inputApellido" />
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                            <label class="text-white">Número de telefono</label>
+                            <input type="text" name="telefono" class="form-control" id="numeroTelefono" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="text-white">Email</label>
+                            <input type="text" name="email" class="form-control" id="email" />
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                            <label for="city" class="text-white">Barrio / Localidad</label>
+                            <input type="text" name="barrio" class="form-control" id="calle" />
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-group col-md-4 mb-3">
+                                    <label for="city" class="text-white">Calle</label>
+                                    <input type="text" name="calle" class="form-control" id="direccion" />
+                                </div>
+                                <div class="form-group col-md-3 mb-3">
+                                    <label class="text-white">Altura</label>
+                                    <input type="text" name="altura" class="form-control" id="altura" />
+                                </div>
+                                <div class="form-group col-md-2 mb-3">
+                                    <label class="text-white">Entre Calles</label>
+                                    <input type="text" name="entreCalle1" class="form-control" id="entre1" />
+                                </div>
+                                <div class="form-group col-md-1 py-4 text-center">
+                                    <label class="text-white">y</label>
+                                </div>
+                                <div class="form-group col-md-2 mb-3">
+                                    <label></label>
+                                    <input type="text" name="entreCalle2" class="form-control" id="entre2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <!-- Sección Elije tu pie -->
+                            <div class="row border-top border-bottom border-success" id="rowBorder">
+                                <div class="col-md-6 mb-3 form-group ">
+                                    <label for="selectZona" class="text-white">Elije tu pie</label>
+                                    <select class="form-select" name="pie1" aria-label="Default select example"
+                                        id="select1">
+                                        <option selected>Passionfruit Pie</option>
+                                        <option>Apple Pie</option>
+                                        <option>Oreo Pie</option>
+                                        <option>Chocotorta Pie</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2 mb-3">
+                                    <label for="city" class="text-white">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad1" value="1"
+                                        name="cantidad1" />
+                                </div>
+                                <div class="form-group col-md-2 offset-2 mb-3">
+                                    <!-- Al hacer click en este boton, se tiene que agregar una sección "elije tu pie" nueva -->
+                                    <a class="btn btn-success form-control mt-4" id="botonAgregar">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Fin de sección elije tu pie -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="form-group mb-3">
+                            <label for="specs" class="text-white">Comentarios sobre el pedido</label>
+                            <textarea class="form-control" name="comentarios" placeholder="Entregar con una dedicatoria: que lo disfrutes, amig@!"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-check-input mt-2" type="checkbox" id="checkBox" name="checkBox"/>
+                        <label class="form-check-label form-control-sm mb-3 text-white" for="rememberMeCheck">
+                            <small>
+                                Desea recibir notificaciones sobre nuevos productos y
+                                promociones?
+                            </small>
+                        </label>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success col-md-12" id="submitButton"
+                                style="display: block;">
+                                Hacer pedido
+                            </button>
+                            <button class="btn btn-success col-md-12" type="button" id="botonLoading"
+                                style="display: none;">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Procesando Formulario...
+                            </button>
+                            <button class="btn btn-success" type="button" id="botonModal" data-bs-toggle="modal" data-bs-target="#exampleModal" hidden>
+                                Show Modal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Gracias por tu solicitud!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="display-6"><small>Formulario enviado con exito!</small></p>
+                    <br/>
+                    <p>Recibiras un mail con el detalle de tu compra, gracias por tu contacto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="redirect">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src=" https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+    <script src="https://kit.fontawesome.com/b6cd9a94a7.js" crossorigin="anonymous"></script>
+    <script src="js/orderFunctions.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
